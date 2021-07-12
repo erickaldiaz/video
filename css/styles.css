@@ -25,6 +25,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* z-index: 2; */
+    /* z-index: 2;  PARA PONER ADELANTE EL VIDEO*/
 
 }
