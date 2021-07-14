@@ -30,3 +30,17 @@ function handleForward() {
     $video.currentTime = $video.currentTime + 10
     console.log('le diste click al botón de adelantar 10 segundos', $video.currentTime)
 }
+
+const $progress = document.querySelector('#progress')
+$video.addEventListener('loadedmetadata', handleLoaded)
+$video.addEventListener('timeupdate', handleTimeUpdate)
+
+function handleLoaded() {
+    $progress.max = $video.duration
+    console.log('cargo mi video', $video.duration )
+}
+function handleTimeUpdate() {
+    $progress.value = $video.currentTime
+    console.log('tiempo actual', $video.currentTime)
+
+}

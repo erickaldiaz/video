@@ -30,6 +30,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*  espacio entre elementos */
+    gap: 20px;
     /* z-index: 2;  PARA PONER ADELANTE EL VIDEO*/
 }
 .player-progress {
