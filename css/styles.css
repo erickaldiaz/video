@@ -17,6 +17,9 @@ body {
     inline-size: 100%;
     aspect-ratio: 16/9;
     vertical-align: middle;
+    /* se aplica al valor de las imagenes. La imagen se expande un poco más para llenar la proporción de 16/9 */
+    object-fit: cover;
+    
 }
 .player-title {
     color:white;
@@ -44,4 +47,16 @@ body {
 }
 .player-progress input {
     flex: 1;
+}
+
+.player-overlay {
+    position: absolute;
+    /* para que los botones se expandan hacia los extremos */
+    inset: 0;
+    opacity: 0;
+    transition: .3s opacity;
+}
+
+.player:hover .player-overlay {
+    opacity: 1;
 }
