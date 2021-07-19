@@ -1,15 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
 @import './buttons.css';
+
 
 body {
     background-color: #F5C2EC;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Zen Loop', cursive;
+    text-align: center;
 }
 .wrapper {
     max-inline-size: 900px;
     margin: auto;
 }
+h1 {
+    /* para que el ancho abarque solo el elpacio que necesite el texto */
+    display: inline-block;
+    /* para que después pueda mover las lineas de los costados en base a la posicion del elemento */
+    position: relative;
+    color:white;
+    font-size: 50px;
+    padding-bottom: 0;;
+}
+
+h1::after, h1::before {
+    content:'';
+    position:absolute;
+    width:120px;
+    height:3px;
+    background-color:#C2F5CB;
+    ;
+    top: 0.6em;
+}
+h1::before {
+    left:-140px;
+}
+h1::after {
+    right:-140px;
+}
 .player {
-    margin-block-start: 100px;
+    margin-block-start: 50px;
     /* border: 10px solid red; */
     position: relative;
 }
