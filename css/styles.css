@@ -35,7 +35,7 @@ body {
     align-items: center;
     /*  espacio entre elementos */
     gap: 20px;
-    /* z-index: 2;  PARA PONER ADELANTE EL VIDEO*/
+    z-index: 2;  PARA PONER ADELANTE EL VIDEO
 }
 .player-progress {
     /* background: yellow; */
@@ -55,7 +55,7 @@ body {
     inset: 0;
     opacity: 0;
     transition: .3s opacity;
-    z-index: 2;
+    /* z-index: 10; */
 }
 
 .player:hover .player-overlay {
